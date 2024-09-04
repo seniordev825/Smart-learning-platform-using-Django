@@ -53,7 +53,7 @@ class CourseViewSet(AutoPrefetchViewSetMixin,viewsets.ModelViewSet):
         if self.request.user.is_staff:
             return super().get_queryset()
         return super().get_queryset().filter(instructor__user__is_active=True)
-    
+     
     def get_permissions(self):
         
         if self.action == "create":
