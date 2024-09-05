@@ -9,7 +9,7 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
         # Allow read-only access for all users.
         if request.method in permissions.SAFE_METHODS:
-            return True
+            return True 
         
         # Allow full access to admin users.
         if request.user.is_staff:
