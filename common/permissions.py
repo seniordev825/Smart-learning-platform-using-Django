@@ -11,7 +11,7 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
         if request.method in permissions.SAFE_METHODS:
             return True 
         
-        # Allow full access to admin users.
+        # Allow full access to admin users. 
         if request.user.is_staff:
             return True
         
