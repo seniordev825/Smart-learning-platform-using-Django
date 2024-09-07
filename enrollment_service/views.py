@@ -2,7 +2,7 @@ from common.pagination import CustomPagination
 from common.permissions import IsCourseInstructor
 from rest_framework import (
     viewsets,
-    permissions,
+    permissions, 
     generics,
     serializers, 
     validators,
