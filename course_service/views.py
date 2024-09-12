@@ -7,7 +7,7 @@ from rest_framework import (
     permissions,
     generics,
     serializers, 
-    validators,
+    validators, 
 )
 from rest_framework.filters import OrderingFilter, SearchFilter 
 from common import permissions as custom_permissions
