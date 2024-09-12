@@ -8,7 +8,7 @@ from rest_framework import (
     generics,
     serializers, 
     validators, 
-)
+) 
 from rest_framework.filters import OrderingFilter, SearchFilter 
 from common import permissions as custom_permissions
 from user_service.models import InstructorProfile
