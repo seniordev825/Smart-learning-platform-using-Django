@@ -34,7 +34,7 @@ class EnrollmentByCourseView(AutoPrefetchViewSetMixin, generics.ListAPIView):
     filter_backends = [DjangoFilterBackend]
     filterset_class = EnrollmentFilter
     permission_classes = [permissions.IsAuthenticated, IsCourseInstructor]
-
+ 
     def get_queryset(self):
         course_id = self.kwargs.get('course_id')
         return Enrollment.objects.filter(course__id=course_id).order_by('-enrollment_date') 
