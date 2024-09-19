@@ -9,7 +9,7 @@ from django.core.validators import FileExtensionValidator
 
 class Course(models.Model):
  
-    DIFFICULTY = (
+    DIFFICULTY = ( 
         ("Beginner", "Beginner"),
         ("Intermediate", "Intermediate"),
         ("Advanced", "Advanced")
