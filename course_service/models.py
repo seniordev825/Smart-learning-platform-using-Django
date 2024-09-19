@@ -143,7 +143,7 @@ class TagModule(models.Model):
     def __str__(self):
         return f"{self.tag.name} - {self.module.name}"
       
-    
+     
 class Review(models.Model):
     id = ShortUUIDField(primary_key=True, length=6, max_length=6, editable=False)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="review")
