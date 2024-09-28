@@ -5,7 +5,7 @@ from course_service.models import Course
 
 # Create your models here.
 
-class Enrollment(models.Model):
+class Enrollment(models.Model): 
     id = ShortUUIDField(primary_key=True, length=6, max_length=6, editable=False )
     student = models.ForeignKey(StudentProfile, on_delete=models.CASCADE, related_name='enrolled_student')
     course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='enrolled_course')
