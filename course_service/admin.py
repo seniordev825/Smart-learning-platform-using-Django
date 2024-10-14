@@ -35,7 +35,7 @@ class TagModuleAdmin(admin.ModelAdmin):
     list_filter = ['tag', 'module']
     search_fields = ['tag__name', 'module__name']
 
-
+ 
 @admin.register(Module)
 class ModuleAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'course', 'created_at']
