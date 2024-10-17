@@ -13,7 +13,7 @@ class ConfirmEmailSerializer(serializers.ModelSerializer):
     uidb64 = serializers.CharField(min_length=1, write_only=True)
 
     class Meta:
-        model = User
+        model = User 
         fields = ['token', 'uidb64']
         
 class ConfirmSmsSerializer(serializers.ModelSerializer):
