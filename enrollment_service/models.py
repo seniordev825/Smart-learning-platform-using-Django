@@ -15,7 +15,7 @@ class Enrollment(models.Model):
         return f"{self.student} enrolled for {self.course}"
 
 
-class Payment(models.Model):
+class Payment(models.Model): 
     id = ShortUUIDField(primary_key=True, length=6, max_length=6, editable=False )
     enrollment = models.ForeignKey(Enrollment, on_delete=models.CASCADE, related_name='enrollment')
     amount = models.FloatField(null=True, blank=True)
