@@ -7,7 +7,7 @@ class EnrollmentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Enrollment
         fields = '__all__'
-
+    
 
 class EnrollmentByCourseSerializer(serializers.ModelSerializer):
     name = serializers.CharField(source='student.user.first_name')
