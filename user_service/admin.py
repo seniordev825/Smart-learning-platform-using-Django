@@ -9,7 +9,7 @@ class InstructorSkillAdmin(admin.ModelAdmin):
     list_display = ["instructor", "skill_name", "skill_level"]
     list_filter = ["instructor", "skill_level"]
     
-
+ 
 @admin.register(SkillCertification)
 class SkillCertificationAdmin(admin.ModelAdmin):
     list_display = ["skill", "certification_name", "certification_date"]
