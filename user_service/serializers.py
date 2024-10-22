@@ -43,7 +43,7 @@ class ConfirmSmsSerializer(serializers.ModelSerializer):
 class ChangePasswordSerializer(serializers.Serializer):
     old_password = serializers.CharField(required=True)
     new_password = serializers.CharField(required=True)
-    
+
     def validate_new_password(self, value):
         # Validate the password meets strength requirements
         validate_password(value)
