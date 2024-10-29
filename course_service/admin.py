@@ -9,7 +9,7 @@ from .models import (
     Quiz
 )
 # Register your models here.
-
+ 
 @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
     list_display = ("id", "name",  "difficulty", "is_available", "updated_at")
